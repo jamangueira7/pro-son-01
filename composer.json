@@ -1,0 +1,25 @@
+{
+    "name": "mangueira/pro-son-01",
+    "authors": [
+        {
+            "name": "jamangueira7",
+            "email": "jamjs7@gmail.com"
+        }
+    ],
+    "require": {
+        "pimple/pimple": "^3.2",
+        "symfony/http-foundation": "^4.1",
+        "zendframework/zend-eventmanager": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SON\\Framework\\":"src"
+        }
+    },
+    "scripts":{
+        "server": "php -S localhost:8080 -t public"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
