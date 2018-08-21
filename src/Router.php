@@ -27,6 +27,7 @@ class Router
     {
         $url = $this->getCurrentUrl();
         $method = strtolower($_SERVER['REQUEST_METHOD']);
+
         if (empty($this->routes[$method])){
             throw new HttpException('Pagína não econtrada', 404);
         }
